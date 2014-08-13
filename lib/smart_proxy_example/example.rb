@@ -1,4 +1,6 @@
-module Example
+module Proxy::Example
+  class NotFound < RuntimeError; end
+
   class Plugin < ::Proxy::Plugin
     plugin 'example', ::Example::VERSION
     default_settings :hello_greeting => 'O hai!'
