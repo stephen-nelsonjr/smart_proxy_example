@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.description = 'Example smart proxy plugin'
   s.authors = ['John Doe']
   s.email = 'john.doe@example.com'
-  s.files = Dir['{lib,settings.d,bundler.d}/**/*'] + ['README.md', 'LICENSE']
+  s.extra_rdoc_files = ['README.md', 'LICENSE']
+  s.files = Dir['{lib,settings.d,bundler.d}/**/*'] + s.extra_rdoc_files
   s.homepage = 'http://github.com/johndoe/smart_proxy_example'
   s.license = 'GPLv3'
 end
