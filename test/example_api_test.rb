@@ -1,7 +1,7 @@
 require 'test_helper'
 require 'webmock/test_unit'
 require 'mocha/test_unit'
-require "rack/test"
+require 'rack/test'
 
 require 'smart_proxy_example/example'
 require 'smart_proxy_example/example_api'
