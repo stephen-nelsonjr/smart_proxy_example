@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ['README.md', 'LICENSE']
   s.files = Dir['{lib,settings.d,bundler.d}/**/*'] + s.extra_rdoc_files
   s.homepage = 'https://github.com/stephen-nelsonjr/smart_proxy_example'
-  s.license = 'GPL-V3'
+  s.license = 'GPL-3.0'
 end
