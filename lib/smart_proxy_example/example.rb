@@ -2,7 +2,7 @@ module Proxy::Example
   class NotFound < RuntimeError; end
 
   class Plugin < ::Proxy::Plugin
-    plugin 'example', Proxy::Example::VERSION
+    plugin 'netpam', Proxy::Netpam::VERSION
 
     default_settings :hello_greeting => 'O hai!'
 
