@@ -1,5 +1,5 @@
 module Proxy
-  module Example
+  module Netpam
     VERSION = '1.0.0'
   end
 end
