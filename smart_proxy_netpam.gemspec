@@ -1,8 +1,8 @@
-require File.expand_path('../lib/smart_proxy_example/version', __FILE__)
+require File.expand_path('../lib/smart_proxy_netpam/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = 'smart_proxy_example'
-  s.version = Proxy::Example::VERSION
+  s.name = 'smart_proxy_netpam'
+  s.version = Proxy::Netpam::VERSION
 
   s.summary = 'This smart proxy will act as a middleman between the forman plugin and netbox for ipam'
   s.description = 'This smart proxy will act as a middleman between the forman plugin and netbox for ipam'
