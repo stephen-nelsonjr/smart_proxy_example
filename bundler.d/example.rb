@@ -1,1 +1,1 @@
-gem 'smart_proxy_example'
+gem 'smart_proxy_netpam'
