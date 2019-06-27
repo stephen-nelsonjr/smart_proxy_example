@@ -6,7 +6,7 @@ module Proxy::Example
 
     default_settings :hello_greeting => 'O hai!'
 
-    http_rackup_path File.expand_path('example_http_config.ru', File.expand_path('../', __FILE__))
-    https_rackup_path File.expand_path('example_http_config.ru', File.expand_path('../', __FILE__))
+    http_rackup_path File.expand_path('netpam_http_config.ru', File.expand_path('../', __FILE__))
+    https_rackup_path File.expand_path('netpam_http_config.ru', File.expand_path('../', __FILE__))
   end
 end
