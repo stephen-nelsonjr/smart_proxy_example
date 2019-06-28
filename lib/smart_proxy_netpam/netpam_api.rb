@@ -8,7 +8,7 @@ module Proxy::Netpam
     include ::Proxy::Log
     helpers ::Proxy::Helpers
 
-    get '/hello' do
+    get '/Unused_IP_Address' do
       Proxy::Netpam.say_hello
     end
   end
