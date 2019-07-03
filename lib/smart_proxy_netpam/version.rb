@@ -1,5 +1,5 @@
 module Proxy
-  module Netpam
+  module Netbox
     VERSION = '1.0.0'
   end
 end
