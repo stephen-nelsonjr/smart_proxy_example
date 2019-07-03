@@ -3,14 +3,14 @@ require 'webmock/test_unit'
 require 'mocha/test_unit'
 require 'rack/test'
 
-require 'smart_proxy_netpam/netpam'
-require 'smart_proxy_netpam/netpam_api'
+require 'smart_proxy_netbox/netbox'
+require 'smart_proxy_netbox/netbox_api'
 
-class NetpamApiTest < Test::Unit::TestCase
+class NetboxApiTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
-    Proxy::Netpam::Api.new
+    Proxy::Netbox::Api.new
   end
 
   def test_returns_hello_greeting
