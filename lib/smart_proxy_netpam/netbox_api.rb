@@ -1,15 +1,15 @@
 require 'sinatra'
-require 'smart_proxy_netpam/netpam'
-require 'smart_proxy_netpam/netpam_main'
+require 'smart_proxy_netbox/netbox'
+require 'smart_proxy_netbox/netbox_main'
 
-module Proxy::Netpam
+module Proxy::Netbox
 
   class Api < ::Sinatra::Base
     include ::Proxy::Log
     helpers ::Proxy::Helpers
 
     get '/Unused_IP_Address' do
-      Proxy::Netpam.say_hello
+      Proxy::Netbox.say_hello
     end
   end
 end
