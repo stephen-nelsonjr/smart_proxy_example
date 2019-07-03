@@ -1,5 +1,5 @@
-require 'smart_proxy_netpam/netpam_api'
+require 'smart_proxy_netbox/netbox_api'
 
-map '/netpam' do
-  run Proxy::Netpam::Api
+map '/netbox' do
+  run Proxy::Netbox::Api
 end
