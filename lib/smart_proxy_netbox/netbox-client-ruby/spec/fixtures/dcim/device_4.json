@@ -1,0 +1,53 @@
+{
+  "id": 4,
+  "name": "child_device1",
+  "display_name": "child_device1",
+  "device_type": {
+    "id": 3,
+    "url": "http://localhost/api/dcim/device-types/3/",
+    "manufacturer": {
+      "id": 1,
+      "url": "http://localhost/api/dcim/manufacturers/1/",
+      "name": "manu1",
+      "slug": "manu1"
+    },
+    "model": "child1",
+    "slug": "child1"
+  },
+  "device_role": {
+    "id": 1,
+    "url": "http://localhost/api/dcim/device-roles/1/",
+    "name": "devicerole1",
+    "slug": "devicerole1"
+  },
+  "tenant": null,
+  "platform": null,
+  "serial": "",
+  "asset_tag": null,
+  "site": {
+    "id": 2,
+    "url": "http://localhost/api/dcim/sites/2/",
+    "name": "test_site2",
+    "slug": "test2"
+  },
+  "rack": {
+    "id": 1,
+    "url": "http://localhost/api/dcim/racks/1/",
+    "name": "test2rack",
+    "display_name": "test2rack"
+  },
+  "position": null,
+  "face": null,
+  "parent_device": null,
+  "status": {
+    "value": true,
+    "label": "Active"
+  },
+  "primary_ip": null,
+  "primary_ip4": null,
+  "primary_ip6": null,
+  "comments": "",
+  "custom_fields": {
+    "custom1": null
+  }
+}
