@@ -20,7 +20,7 @@ module Proxy::Netbox
     def assign_new_ip
       # create an ip address
       new_ip = NetboxClientRuby::IPAM::IpAddress.new
-      new_ip.address = "192.1.0.2/16"
+      new_ip.address = "192.168.0.3/16"
       new_ip.status = "Active"
       new_ip.description = "Test IP Address"
       new_ip.save    
