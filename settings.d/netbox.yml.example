@@ -1,3 +1,8 @@
 ---
 :enabled: true
-:hello_greeting: 'O hai!'
+
+:external_ipam:
+  :netbox:
+    :url: 'http://netbox.example.com'
+    :user: 'netbox_api_user'
+    :password: 'netbox_password'
