@@ -9,13 +9,9 @@ module Proxy::Netbox
     include ::Proxy::Log
     helpers ::Proxy::Helpers
     
-    def initialize
-      @nb = NetboxClientRuby.new()
-    end
-    
     def configure
       NetboxClientRuby.configure do |c|
-        c.netbox.auth.token = '2e35594ec8710e9922d14365a1ea66f27ea69450'
+        c.netbox.auth.token = ''
         c.netbox.api_base_url = 'http://netbox.local/api/'
         c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
       end
