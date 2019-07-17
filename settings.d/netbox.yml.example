@@ -1,7 +1,7 @@
 ---
 :enabled: true
 
-:external_ipam:
+:netbox_ipam:
   :netbox:
     :url: 'http://netbox.example.com'
     :user: 'netbox_api_user'
