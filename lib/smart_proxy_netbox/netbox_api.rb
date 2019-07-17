@@ -1,7 +1,7 @@
 require 'sinatra'
+require 'netbox-client-ruby'
 require 'smart_proxy_netbox/netbox'
 require 'smart_proxy_netbox/netbox_main'
-require 'netbox-client-ruby'
 
 module Proxy::Netbox
 
