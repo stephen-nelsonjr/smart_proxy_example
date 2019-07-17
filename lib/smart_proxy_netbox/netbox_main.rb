@@ -3,9 +3,8 @@ module Proxy::Netbox
   extend ::Proxy::Log
 
   class << self
-
-    def say_hello
-      Proxy::Netbox::Plugin.settings.hello_greeting
+    def get_config
+      Proxy::Netbox::Plugin.settings.netbox_ipam
     end
 
   end
