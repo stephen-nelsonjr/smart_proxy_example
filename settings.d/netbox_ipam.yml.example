@@ -4,5 +4,5 @@
 :netbox_ipam:
   :netbox:
     :url: 'http://netbox.example.com'
-    :user: 'netbox_api_user'
-    :password: 'netbox_password'
+    :user: 'admin'
+    :password: 'admin'
