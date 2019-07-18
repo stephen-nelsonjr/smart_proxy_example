@@ -8,13 +8,13 @@ require 'smart_proxy_netbox/netbox_main'
 module Proxy::Netbox
   class NetboxClient
     def initialize 
-      conf = Proxy::Ipam.get_config[:netbox]
+      settings = Proxy::Ipam.get_config[:netbox]
       @netbox_config = {
-        :url => conf[:url], 
-        :user => conf[:user], 
-        :password => conf[:password]
+        :url => settings[:url], 
+        :user => settings[:user], 
+        :password => settings[:password]
       }
-      @api_base = "#{conf[:url]}/api/#{conf[:user]}/"
+      @api_base = "#{settings[:url]}/api/#{settings[:user]}/"
       @token = nil
     end
   end
