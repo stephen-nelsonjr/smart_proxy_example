@@ -13,6 +13,7 @@ module Proxy::Netbox
         :url => settings[:url], 
         :user => settings[:user], 
         :password => settings[:password]
+        :token => settings[:token]
       }
       @api_base = "#{settings[:url]}/api/#{settings[:user]}/"
       @token = nil
