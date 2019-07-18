@@ -12,7 +12,6 @@ The following parameters are required to be set:
 
 ```yaml
 ---
----
 :enabled: true
 
 :netbox_ipam:
