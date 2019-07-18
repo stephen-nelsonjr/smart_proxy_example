@@ -3,6 +3,7 @@
 
 :netbox_ipam:
   :netbox:
+  #Parameters to edit:
     :url: 'http://netbox.example.com'
     :user: 'admin'
     :password: 'admin'
