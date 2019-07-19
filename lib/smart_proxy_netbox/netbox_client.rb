@@ -24,5 +24,24 @@ module Proxy::Netbox
         c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
       end
     end
+    
+    def add_subnet
+      # create new prefix
+      new_prefix = NetboxClientRuby::IPAM::Prefix.new
+      new_prefix.prefix = "123.1.0.0/24"
+      new_prefix.role = "..."
+      new_prefix.description = "..."
+      new_prefix.site = "..."
+      new_prefix.tags = "..."
+    end
+    
+    def add_ip
+      new_ip = NetboxClientRuby::IPAM::IpAddress.new
+      new_ip.address = "192.1.0.2/16"
+      new_ip.status = "Active"
+      new_ip.role = "..."
+      new_ip.description = "..."
+      new_ip.save
+    end
   end
 end
