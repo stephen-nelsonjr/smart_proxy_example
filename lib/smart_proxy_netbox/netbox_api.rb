@@ -42,5 +42,9 @@ module Proxy::Netbox
         
       end
     end
+    
+    get '/get_subnet' do
+      
+    end
   end
 end
