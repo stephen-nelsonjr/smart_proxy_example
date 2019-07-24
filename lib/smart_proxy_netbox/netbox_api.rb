@@ -25,13 +25,16 @@ module Proxy::Netbox
 #       new_ip.save    
 #     end
 
+    # Retrieves the next available IP Address based on a given prefix/subnet
+    # Adds the IP Address to Netbox
     get '/get_next_available_ip' do
       content_type :json
       
       begin 
         cidr = params[:cidr]
-        ip = params[:ip]
+#         ip = params[:ip]
         
+        # Create a net Netbox client object
         netbox_client = NetboxClient.new
         new_ip = netbox_client.add_ip
         
