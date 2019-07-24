@@ -2,7 +2,7 @@ module Proxy::Example
   class NotFound < RuntimeError; end
 
   class Plugin < ::Proxy::Plugin
-    plugin 'netbox', Proxy::Netbox::VERSION
+    plugin 'netbox_ipam', Proxy::Netbox::VERSION
 
 #     default_settings :hello_greeting => 'O hai!'
 
