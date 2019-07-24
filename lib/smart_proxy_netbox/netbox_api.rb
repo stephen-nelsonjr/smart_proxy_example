@@ -38,6 +38,7 @@ module Proxy::Netbox
         netbox_client = NetboxClient.new
         new_ip = netbox_client.add_ip
         
+        #check if a 'cidr' is provided
         if not cidr
           return {:error => "A 'cidr' parameter for the subnet must be provided(e.g. 10.10.10.0/24)"}.to_json
         end
