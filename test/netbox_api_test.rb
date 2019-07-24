@@ -16,5 +16,10 @@ class NetboxApiTest < Test::Unit::TestCase
   def test_returns_hello_greeting
     # add test here
   end
+  
+  def test_get_next_available_ip
+    post '/next_available_ip'
+    assert last_response.ok?
+  end
 
 end
