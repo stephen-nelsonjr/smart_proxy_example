@@ -8,7 +8,7 @@ To configure this plugin you can use the template from settings.d/netbox.yml.exa
 You must place the netbox.yml config file (based on this template) in your 
 smart-proxy config/settings.d/ directory with the parameters edited to meet your needs.
 
-The following parameters are required to be set:
+The following parameters are required to be set (url, username, & password):
 
 ```yaml
 ---
