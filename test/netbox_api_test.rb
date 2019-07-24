@@ -1,7 +1,8 @@
 require 'test_helper'
-require 'webmock/test_unit'
-require 'mocha/test_unit'
-require 'rack/test'
+#require 'webmock/test_unit'
+#`require 'mocha/test_unit'
+#require 'rack/test'
+require 'test/unit'
 
 require 'smart_proxy_netbox/netbox'
 require 'smart_proxy_netbox/netbox_api'
