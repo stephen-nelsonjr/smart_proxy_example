@@ -39,12 +39,12 @@ module Proxy::Netbox
           return {:error => "A 'cidr' parameter for the subnet must be provided(e.g. 10.10.10.0/24)"}.to_json
         end
         
-        
+        {:cidr => cidr, :next_ip => response['data']}.to_json
       end
     end
     
-    get '/get_subnet' do
+#     get '/get_subnet' do
       
-    end
+#     end
   end
 end
