@@ -1,7 +1,7 @@
 require 'test_helper'
 #require 'webmock/test_unit'
 #`require 'mocha/test_unit'
-#require 'rack/test'
+require 'rack/test'
 require 'test/unit'
 
 require 'smart_proxy_netbox/netbox'
@@ -19,7 +19,7 @@ class NetboxApiTest < Test::Unit::TestCase
   end
   
   def test_get_next_available_ip
-    post '/next_available_ip'
+    get '/next_available_ip'
     assert last_response.ok?
   end
 
