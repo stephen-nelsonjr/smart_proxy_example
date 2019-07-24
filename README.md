@@ -6,7 +6,7 @@ This plug-in adds support for ipam in Netbox by acting as a middleman between th
 
 To configure this plugin you can use the template from settings.d/netbox.yml.example.
 You must place the netbox.yml config file (based on this template) in your 
-smart-proxy config/settings.d/ directory with the parameters edited to meet your needs.
+smart-proxy config/settings.d/ directory with the parameters edited to meet your needs. All parameters are related to Netbox authentication.
 
 The following parameters are required to be set (url, username, and password):
 
