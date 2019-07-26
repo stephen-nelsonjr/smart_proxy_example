@@ -50,7 +50,7 @@ module Proxy::Netbox
       new_role.save
     end
     
-    def add_aggregates
+    def add_aggregate
       new_agg = NetboxClientRuby::IPAM::Aggregrate.new
       new_agg.prefix = "..." #String
       new_agg.rir = "..." #integer
@@ -77,7 +77,7 @@ module Proxy::Netbox
       new_vid.save
     end
     
-    def
+    def add_vlan_group
       new_vlan_group = NetboxClientRuby::VlanGroup.new
       new_vlan_group.name = "..." #String
       new_vlan_group.slug = "..." #String
