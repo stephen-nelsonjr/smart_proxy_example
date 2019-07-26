@@ -43,5 +43,31 @@ module Proxy::Netbox
       new_ip.description = "Test"
       new_ip.save
     end
+    
+    def add_vlan_role
+      new_role = NetboxClientRuby::IPAM::Role.new
+      new_role.name = "..."
+      new_role.slug = "..."
+      new_role.save
+    end
+    
+    def add_aggregates
+      new_agg = NetboxClientRuby::IPAM::Aggregrate.new
+      new_agg.prefix = "..." #String
+      new_agg.rir = "..." #integer
+    end
+    
+    def add_rir
+      new_rir = NetboxClientRuby::IPAM::Rir.new
+      new_rir.name = "..." #String
+      new_rir.slug = "..." #String
+    end
+    
+    def add_vrf
+      new_vrf = NetboxClientRuby::IPAM::Vrf.new
+      new_vrf.name = "..." #String
+    end
+    
+    def add
   end
 end
