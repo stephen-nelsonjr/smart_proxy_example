@@ -77,6 +77,11 @@ module Proxy::Netbox
       new_vid.save
     end
     
-    
+    def
+      new_vlan_group = NetboxClientRuby::VlanGroup.new
+      new_vlan_group.name = "..." #String
+      new_vlan_group.slug = "..." #String
+      new_vlan_group.save
+    end
   end
 end
