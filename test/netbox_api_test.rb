@@ -19,7 +19,7 @@ class NetboxApiTest < Test::Unit::TestCase
   end
   
   def test_get_next_available_ip
-    post '/next_available_ip'
+    get '/next_available_ip'
     assert last_response.ok?, "Last response was not ok: #{last_response.body}" 
   end
 
