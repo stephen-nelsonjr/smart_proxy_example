@@ -32,6 +32,7 @@ module Proxy::Netbox
       new_prefix.description = "..."
       new_prefix.site = "..."
       new_prefix.tags = "..."
+      new_prefix.save
     end
     
     def add_ip
