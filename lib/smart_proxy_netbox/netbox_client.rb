@@ -24,14 +24,14 @@ module Proxy::Netbox
       end
     end
     
-    def add_subnet
+    def add_prefix(prefix)
       # create new prefix
       new_prefix = NetboxClientRuby::IPAM::Prefix.new
-      new_prefix.prefix = "123.1.0.0/24"
-      new_prefix.role = "..."
-      new_prefix.description = "..."
-      new_prefix.site = "..."
-      new_prefix.tags = "..."
+      new_prefix.prefix = "123.1.0.0/24" #String
+#       new_prefix.role = "..."
+      new_prefix.description = "..." #String
+#       new_prefix.site = "..."
+#       new_prefix.tags = "..."
       new_prefix.save
     end
     
