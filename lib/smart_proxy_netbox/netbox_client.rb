@@ -100,7 +100,7 @@ module Proxy::Netbox
     def remove_prefix(id)
       # Remove the Prefix with the given ID
       old_prefix = NetboxClientRuby.ipam.prefix(id)
-      old_prefix.remove
+      old_prefix.delete
     end
   end
 end
