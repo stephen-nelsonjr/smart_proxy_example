@@ -52,8 +52,8 @@ module Proxy::Netbox
     
     def add_aggregate(prefix, rir)
       new_agg = NetboxClientRuby::IPAM::Aggregrate.new
-      new_agg.prefix = "..." #String
-      new_agg.rir = "..." #integer
+      new_agg.prefix = prefix #String
+      new_agg.rir = rir #integer
       new_agg.save
     end
     
