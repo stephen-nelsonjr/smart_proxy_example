@@ -11,6 +11,7 @@ smart-proxy config/settings.d/ directory with the parameters edited to meet your
 The following parameters are required to be set (url, username, and password):
 
 ```yaml
+# settings.d/netbox.yml.example file
 ---
 :enabled: true
 
