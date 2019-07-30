@@ -24,6 +24,12 @@ module Proxy::Netbox
       end
     end
     
+    def get_available_ips(prefix, cidr)
+      temp_prefix = NetboxClientRuby::IPAM::Prefix.new
+      temp_prefix = prefix + cidr
+      temp_prefix.availabe
+    end
+    
     def add_prefix(prefix, description)
       # Create new Prefix
       new_prefix = NetboxClientRuby::IPAM::Prefix.new
@@ -93,7 +99,7 @@ module Proxy::Netbox
     
     def remove_ip(id)
       # Remove an IP Address with the given ID
-      old_ip = NetboxClientRuby.ipam.ip_address(id)
+      old_ip = NetboxClientRuby.ipam.ip(id)
       old_ip.delete
     end
     
