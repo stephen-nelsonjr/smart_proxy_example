@@ -93,7 +93,7 @@ module Proxy::Netbox
     
     def remove_ip(id)
       # Remove an IP Address with the given ID
-      old_ip = NetboxClientRuby.ipam.ip(id)
+      old_ip = NetboxClientRuby.ipam.ip_address(id)
       old_ip.delete
     end
     
