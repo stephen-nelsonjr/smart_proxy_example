@@ -13,12 +13,12 @@ module Proxy::Netbox
         :url => settings[:url], 
         :user => settings[:user], 
         :password => settings[:password]
-        :token => settings[:token]
+#         :token => settings[:token]
       }
       @api_base_address = "#{settings[:url]}/api/"
       
       NetboxClientRuby.configure do |c|
-        c.netbox.auth.token = @netbox_config[:token]
+        c.netbox.auth.token = '0123456789abcdef0123456789abcdef01234567'#@netbox_config[:token]
         c.netbox.api_base_url = @api_base_address
         c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
       end
