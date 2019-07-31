@@ -44,7 +44,9 @@ module Proxy::Netbox
           return {:error => "A 'cidr' parameter for the subnet must be provided(e.g. 10.10.10.0/24)"}.to_json
         end
         
-        {:cidr => cidr, :next_ip => response['data']}.to_json
+        {:message => "IP #{ip} added to subnet #{cidr} successfully."}.to_json
+      rescue Errno::ECONNREFUSED
+        return {:error => "Unable to connect to External IPAM server"}.to_json
       end
     end
     
