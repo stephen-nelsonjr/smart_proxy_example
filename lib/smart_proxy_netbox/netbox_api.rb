@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'smart_proxy_netbox/netbox'
 require 'smart_proxy_netbox/netbox_main'
+require 'smart_proxy_netbox/netbox_client'
+
 
 module Proxy::Netbox
 
