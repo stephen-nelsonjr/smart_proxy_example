@@ -18,8 +18,8 @@ class NetboxApiTest < Test::Unit::TestCase
 #     # add test here
 #   end
   
-  def test_get_next_available_ip
-    get '/next_available_ip', :ip => '192.1.0.2', :cidr => '/16'
+  def test_add_ip
+    get '/add_ip', :ip => '192.1.0.2', :cidr => '/16'
     assert last_response.ok?, "Last response was not ok: #{last_response.body}" 
   end
   
