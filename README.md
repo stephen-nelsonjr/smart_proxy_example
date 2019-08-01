@@ -21,4 +21,5 @@ The following parameters are required to be set (url, username, and password):
     :url: 'http://netbox.example.com'
     :user: 'admin'
     :password: 'admin'
+    :token: '0123456789abcdef0123456789abcdef01234567'
 ```
