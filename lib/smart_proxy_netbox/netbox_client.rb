@@ -8,7 +8,7 @@ require 'smart_proxy_netbox/netbox_main'
 module Proxy::Netbox
   class NetboxClient
     def initialize 
-      settings = Proxy::Netbox.get_config[:netbox]
+      settings = Proxy::Netbox.get_config
       @netbox_config = {
         :url => settings[:url], 
         :user => settings[:user], 
