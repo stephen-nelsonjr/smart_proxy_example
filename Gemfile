@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gemspec
 gem 'json'
-  gem 'netbox-client-ruby'
+gem 'netbox-client-ruby'
 
 group :development do
   gem 'smart_proxy', :git => 'https://github.com/theforeman/smart-proxy.git', :branch => 'develop'
