@@ -7,9 +7,7 @@ require 'smart_proxy_netbox/netbox_main'
 # require 'netbox-client-ruby'
 
 module Proxy::Netbox
-  class NetboxClient
-    def initialize 
-#       settings = Proxy::Netbox.get_config
+  #       settings = Proxy::Netbox.get_config
       @netbox_config = {
         :url => Proxy::SETTINGS.url, 
         :user => Proxy::SETTINGS.user, 
@@ -23,7 +21,23 @@ module Proxy::Netbox
         c.netbox.api_base_url = @api_base_address
         c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
       end
-    end
+  class NetboxClient
+#     def initialize 
+# #       settings = Proxy::Netbox.get_config
+#       @netbox_config = {
+#         :url => Proxy::SETTINGS.url, 
+#         :user => Proxy::SETTINGS.user, 
+#         :password => Proxy::SETTINGS.password,
+#         :token => Proxy::SETTINGS.token
+#       }
+#       @api_base_address = "#{Proxy::SETTINGS.url}/api/"
+      
+#       NetboxClientRuby.configure do |c|
+#         c.netbox.auth.token = @netbox_config[:token]
+#         c.netbox.api_base_url = @api_base_address
+#         c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
+#       end
+#     end
     
     def get_available_ips(prefix, cidr)
       temp_prefix = NetboxClientRuby::IPAM::Prefix.new
