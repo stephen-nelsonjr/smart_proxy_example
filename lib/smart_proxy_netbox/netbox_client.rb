@@ -4,7 +4,7 @@ require 'json'
 require 'net/http'
 require 'smart_proxy_netbox/netbox'
 require 'smart_proxy_netbox/netbox_main'
-require 'smart_proxy_netbox/netbox_client_ruby'
+require 'netbox-client-ruby'
 
 module Proxy::Netbox
   class NetboxClient
