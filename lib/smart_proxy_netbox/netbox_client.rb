@@ -10,9 +10,9 @@ module Proxy::Netbox
     def initialize 
       settings = Proxy::Netbox.get_config
       @netbox_config = {
-        :url => settings[:url], 
-        :user => settings[:user], 
-        :password => settings[:password]
+        :url => settings.url, 
+        :user => settings.user, 
+        :password => settings.password
 #         :token => settings[:token]
       }
       @api_base_address = "#{settings[:url]}/api/"
