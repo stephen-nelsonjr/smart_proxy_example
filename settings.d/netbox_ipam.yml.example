@@ -3,7 +3,7 @@
 
 :netbox_ipam:
   :netbox:
-  # Parameters to edit:
+  #Parameters to edit:
     :url: 'http://172.16.13.33:8888'
     :user: 'admin'
     :password: 'admin'
