@@ -10,7 +10,7 @@ module Proxy::Netbox
     def initialize 
       settings = Proxy::Netbox.get_config
       @netbox_config = {
-        :url => Proxy::SETTINGS::Netbox.url, 
+        :url => Proxy::SETTINGS.url, 
         :user => settings.user, 
         :password => settings.password
 #         :token => settings[:token]
