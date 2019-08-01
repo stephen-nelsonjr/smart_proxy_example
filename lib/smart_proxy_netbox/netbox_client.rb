@@ -8,12 +8,12 @@ require 'smart_proxy_netbox/netbox_main'
 module Proxy::Netbox
   class NetboxClient
     def initialize 
-      settings = Proxy::Netbox.get_config
+#       settings = Proxy::Netbox.get_config
       @netbox_config = {
         :url => Proxy::SETTINGS.url, 
-        :user => settings.user, 
-        :password => settings.password
-#         :token => settings[:token]
+        :user => Proxy::SETTINGS.user, 
+        :password => Proxy::SETTINGS.password,
+        :token => Proxy::SETTINGS.token
       }
       @api_base_address = "#{settings[:url]}/api/"
       
