@@ -4,12 +4,11 @@ require 'json'
 require 'net/http'
 require 'smart_proxy_netbox/netbox'
 require 'smart_proxy_netbox/netbox_main'
-# require 'netbox-client-ruby'
+require 'netbox-client-ruby'
 
 module Proxy::Netbox
   class NetboxClient
     def initialize 
-#       settings = Proxy::Netbox.get_config
       @netbox_config = {
         :url => Proxy::SETTINGS.url, 
         :user => Proxy::SETTINGS.user, 
