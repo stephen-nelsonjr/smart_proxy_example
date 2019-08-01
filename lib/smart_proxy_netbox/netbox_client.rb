@@ -15,7 +15,7 @@ module Proxy::Netbox
         :password => Proxy::SETTINGS.password,
         :token => Proxy::SETTINGS.token
       }
-      @api_base_address = "#{settings[:url]}/api/"
+      @api_base_address = "#{Proxy::SETTINGS.url}/api/"
       
       NetboxClientRuby.configure do |c|
         c.netbox.auth.token = @netbox_config[:token]
