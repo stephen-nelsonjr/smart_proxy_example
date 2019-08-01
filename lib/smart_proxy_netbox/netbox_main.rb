@@ -4,7 +4,7 @@ module Proxy::Netbox
 
   class << self
     def get_config
-      Proxy::Plugin.settings.netbox_ipam
+      Proxy::SETTINGS.netbox_ipam
     end
 
   end
