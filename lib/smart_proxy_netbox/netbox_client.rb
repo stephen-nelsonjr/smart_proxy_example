@@ -5,6 +5,7 @@ require 'net/http'
 require 'smart_proxy_netbox/netbox'
 require 'smart_proxy_netbox/netbox_main'
 require 'netbox-client-ruby'
+require 'webmock'
 
 module Proxy::Netbox
   class NetboxClient
