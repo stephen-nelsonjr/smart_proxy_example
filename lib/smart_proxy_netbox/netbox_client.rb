@@ -20,7 +20,13 @@ module Proxy::Netbox
       }
       @api_base_address = "#{Proxy::SETTINGS.url}/api/"
       
-      stub_request(:post, "http://172.16.13.33:8888/api/ipam/ip-addresses/").
+      NetboxClientRuby.configure do |c|
+        c.netbox.auth.token = @netbox_config[:token]
+        c.netbox.api_base_url = 'http://172.16.13.33:8888/api/' #@api_base_address
+        c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
+      end
+      
+            stub_request(:post, "http://172.16.13.33:8888/api/ipam/ip-addresses/").
     with(
       body: "{\"address\":\"192.1.0.2/16\",\"status\":\"Active\",\"description\":\"Proxy Test\"}",
       headers: {
@@ -31,11 +37,6 @@ module Proxy::Netbox
       }).
     to_return(status: 200, body: "", headers: {})
       
-      NetboxClientRuby.configure do |c|
-        c.netbox.auth.token = @netbox_config[:token]
-        c.netbox.api_base_url = 'http://172.16.13.33:8888/api/' #@api_base_address
-        c.netbox.auth.rsa_private_key.path = '~/.ssh/netbox_rsa'
-      end
     end
     
     # For each endpoint, I only included the required parameters
