@@ -36,7 +36,7 @@ module Proxy::Netbox
       new_prefix = NetboxClientRuby::IPAM::Prefix.new
       new_prefix.prefix = "123.1.0.0/24" #String
       new_prefix.description = description #String
-      new_prexif.save
+      new_prefix.save
 #       new_prefix.role = "..."
 #       new_prefix.site = "..."
 #       new_prefix.tags = "..."
