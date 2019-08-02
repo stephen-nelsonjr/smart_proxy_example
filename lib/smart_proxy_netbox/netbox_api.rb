@@ -39,7 +39,7 @@ module Proxy::Netbox
         
         # Create a net Netbox client object
         netbox_client = NetboxClient.new
-        new_ip = netbox_client.def add_ip(ip + cidr, "Proxy Test")
+        new_ip = netbox_client.add_ip(ip + cidr, "Proxy Test")
         
         #check if a 'cidr' is provided
         if not cidr
