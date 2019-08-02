@@ -48,7 +48,7 @@ module Proxy::Netbox
         
         {:message => "IP #{ip} added to subnet #{cidr} successfully."}.to_json
       rescue Errno::ECONNREFUSED
-        return {:error => "Unable to connect to External IPAM server"}.to_json
+        return {:error => "Unable to connect to Netbox"}.to_json
       end
     end
     
