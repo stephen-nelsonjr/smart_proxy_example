@@ -4,7 +4,7 @@
 :netbox_ipam:
   :netbox:
   #Parameters to edit:
-    :url: 'http://172.16.13.33:8888'
+    :url: 'http://NETBOX_URL/api/'
     :user: 'admin'
     :password: 'admin'
     :token: '0123456789abcdef0123456789abcdef01234567'
