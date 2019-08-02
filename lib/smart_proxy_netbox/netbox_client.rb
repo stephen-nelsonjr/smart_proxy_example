@@ -20,6 +20,17 @@ module Proxy::Netbox
       }
       @api_base_address = "#{Proxy::SETTINGS.url}/api/"
       
+      stub_request(:post, "http://172.16.13.33:8888/api/ipam/ip-addresses/").
+    with(
+      body: "{\"address\":\"192.1.0.2/16\",\"status\":\"Active\",\"description\":\"Proxy Test\"}",
+      headers: {
+  	  'Accept'=>'*/*',
+  	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+  	  'Content-Type'=>'application/json',
+  	  'User-Agent'=>'Faraday v0.15.4'
+      }).
+    to_return(status: 200, body: "", headers: {})
+      
       NetboxClientRuby.configure do |c|
         c.netbox.auth.token = @netbox_config[:token]
         c.netbox.api_base_url = 'http://172.16.13.33:8888/api/' #@api_base_address
