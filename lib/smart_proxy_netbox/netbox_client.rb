@@ -30,9 +30,10 @@ module Proxy::Netbox
     
     # For each endpoint, I only included the required parameters
     def get_available_ips(prefix, cidr)
+      # Work in progress
       temp_prefix = NetboxClientRuby::IPAM::Prefix.new
       temp_prefix = prefix + cidr
-      temp_prefix.availabe
+#       temp_prefix.availabe
     end
     
     def add_prefix(prefix, description)
