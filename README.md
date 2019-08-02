@@ -18,7 +18,7 @@ The following parameters are required to be set (url, username, and password):
 :netbox_ipam:
   :netbox:
   #Parameters to edit:
-    :url: 'http://netbox.example.com'
+    :url: 'http://NETBOX_URL/api/'
     :user: 'admin'
     :password: 'admin'
     :token: '0123456789abcdef0123456789abcdef01234567'
