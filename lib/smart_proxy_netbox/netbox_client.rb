@@ -8,6 +8,8 @@ require 'netbox-client-ruby'
 
 module Proxy::Netbox
   class NetboxClient
+    include WebMock::API
+    
     def initialize 
       @netbox_config = {
         :url => Proxy::SETTINGS.url, 
